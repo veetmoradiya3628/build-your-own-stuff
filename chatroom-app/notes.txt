@@ -1,0 +1,8 @@
+shared pointers
+#ifndef all directives
+what is namespace in cpp
+virtual class and basic oops in cpp
+what is io_context ?
+what is async_read, async_write ?
+event loop, stack, scheduler async behaviour implementation with cpp, io scheduler etc
+debugging of cpp application with gdb or other tools
