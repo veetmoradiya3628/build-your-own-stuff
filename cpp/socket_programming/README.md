@@ -30,3 +30,5 @@
     
     - Connection-based sockets (TCP) - stream sockets
     - Connection-less sockets (UDP) - datagram sockets
+
+https://www.tutorialspoint.com/cplusplus/cpp_socket_programming.htm
