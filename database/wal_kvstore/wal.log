@@ -1,0 +1,6 @@
+{"type":"put","key":"name","value":"Alice"}
+{"type":"put","key":"lang","value":"Go"}
+{"type":"delete","key":"lang","value":""}
+{"type":"put","key":"name","value":"Alice"}
+{"type":"put","key":"lang","value":"Go"}
+{"type":"delete","key":"lang","value":""}
