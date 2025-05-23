@@ -4,5 +4,5 @@ main
 *.exe
 *.txt
 *.bin
-server
 client
+build
