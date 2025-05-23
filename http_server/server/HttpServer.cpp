@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <cstring>
 #include <netinet/in.h>
+#include <thread>
 
 HttpServer::HttpServer(int port) : port(port) {}
 
@@ -41,7 +42,9 @@ void HttpServer::start()
         int client_fd = accept(server_fd, (sockaddr *)&client_addr, &len);
         if (client_fd >= 0)
         {
-            handle_client(client_fd);
+            std::thread([this, client_fd]()
+                        { handle_client(client_fd); })
+                .detach();
         }
     }
 }
