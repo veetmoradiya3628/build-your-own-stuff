@@ -85,3 +85,37 @@
 
 - Users, groups and permissions
     - this are main entities that are used in linux to control access to resources.
+    - Authorization to file and other resources are provided by users and groups.
+    - User Id (UID) and Group Id (GID)
+    - /etc/passwd - file contains all information on user and its meta data
+    - Read, Write and Execute permissions
+    - Permissions are categorise as owner, group and other.
+    - chmod command used for changing permission on file or directory.
+
+- Process communications
+    - The OS is responsible for communication between processes and has different mechanisms to exchange information.
+    - These processes are
+        - unidirectional - exit codes, signals, pipes
+        - bidirectional - sockets
+    - Exit codes
+        - The exit code of the last command is stored in the $? variable, and it can be tested in order to control the flow of the operations.
+    - Signals
+        - signals make it possible to interface any process with another, including itself.
+        - kill -l - command used for listing the signals
+    - Pipes
+        - Pipes connects two ends - a process input with another process output.
+        - |, >, <, >> 
+    - Sockets
+        - Unix domain sockets are a bidirectional communication method between applications on the same machine.
+        - sockets are classified as:
+            - SOCK_STREAM
+            - SOCK_SEQPACKET
+            - SOCK_DGRAM
+
+- Summary
+    - Memory management - pagination and swap
+    - File management - files, directories, hard link, soft links
+    - mount, unmount
+    - process life cycle, exec, fork and kill etc
+    - users, groups and permissions etc
+    - process communication - uni directional, bi directional
