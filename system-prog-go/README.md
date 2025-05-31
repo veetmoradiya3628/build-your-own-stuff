@@ -119,3 +119,51 @@
     - process life cycle, exec, fork and kill etc
     - users, groups and permissions etc
     - process communication - uni directional, bi directional
+
+### Chapter 3 An Overview of Go
+
+- Namespace
+    - pkg, src, bin directories
+    - Each file starts with a package definition, that is package package_name.
+    - normal import, named imports, 
+- Type system
+    - The Go type system defines a series of basic types, including bytes, strings and buffers, composite types like slices or maps, and custom types that have been defined by the application.
+- Go basic types
+
+![alt text](go-types.png)
+
+- Composite types
+
+![alt text](composite-types.png)
+
+- custom defined types can be defined using type define definition
+- The main uses of custom types are to define methods and to make the type specific for a scope, like defining a string type called Message.
+- built in functions like make and new are used for allocation.
+- almost all operators available in the Go lang which are supported by other general purpose languages
+- Scope
+    - package, function or control scope.
+- Constants - Go doesn't have immutability for its variables but defines another type of immutable value called constant. 
+- Flow control
+    - sequential - if/else, switch and for
+    - concurrent - go, select
+- Defer : used for closing resource at the end of execution for current context
+- Panic : In Go language, panic is just like an exception, it also arises at runtime. Or in other words, panic means an unexpected condition arises in your Go program due to which the execution of your program is terminated.
+
+- Concurrency model 
+    - Concurrency is so central to Go that two of its fundamental tools are just keywords - chan and go.
+    - Go channels
+        - A channel is made for sharing data, and it usually connects two or more execution threads in an application, which makes it possible to send and receive data without worrying about data safety. Go has a lightweight implementation of a thread that is managed by the runtime instead of the operating system, and the best way to make them communicate is through the use of channels.
+    - Creating a new goroutine is pretty easy - you just need to use the go operator, followed by a function execution. This includes method calls and closures.
+- Memory management
+    - stack and heap
+    - function calls in stack, go routines in heap
+    - The GC - Garbage collector is responsible for clean up the unreferenced values in the heap, so avoiding storing data in it is a good way of lowering the work of the garbage collector (GC)
+
+- Build and compiling programs
+    - go version
+    - go env
+    - go build
+    - go run
+    - go.mod or go.sum file used for dependency management etc
+    - go mod tidy - clean up dependencies
+    - go get - to get the pkg
