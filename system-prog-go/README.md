@@ -167,3 +167,5 @@
     - go.mod or go.sum file used for dependency management etc
     - go mod tidy - clean up dependencies
     - go get - to get the pkg
+
+- File create, truncate, file system events - multiple features supported by Go lang & its community pkgs.
