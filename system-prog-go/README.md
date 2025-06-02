@@ -169,3 +169,13 @@
     - go get - to get the pkg
 
 - File create, truncate, file system events - multiple features supported by Go lang & its community pkgs.
+- Streams
+    - Writers and readers are not just for files; they are interfaces that abstract flows of data in one direction or another. These flows ofren referred to as streams, are an essential part of most applications.
+    - io.Reader & io.Writer interfaces these are abstract interfaces used by many things : files, buffers, sockets, etc...
+    - byte Writer
+        - Buffer has both capabilities to read and write
+    - string Writer
+    - Any custom implementation of any writer can be defined in the application.
+    - Connected readers and writers using io.Pipes
+    - Extending readers
+    - io and ioutil provide tools for extending functionality of the reader and writers.
