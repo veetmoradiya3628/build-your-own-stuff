@@ -34,7 +34,9 @@
     - is an implementation technique that involves translating a source language to some other - usually lower-level form. when you generate bytecode or machine code, you are compiling. when you transpile to another high-level language you are compiling too.
 - interpreter
     - we mean it takes in source code and executes it immediately. it runs programs from source.
-    
+
+- Classes or prototypes ?
+- Lexical grammer - regular vs. not regular
 
 #### Additional learnings :- 
 
@@ -56,3 +58,6 @@
 - Tree-walk interpreters
 - syntax-directed translation
 - transpiler - source to source compiler
+- Automatic memory management
+    - reference counting - algorithm
+    - tracing garbage collection ("GC") - technique
