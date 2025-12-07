@@ -1,5 +1,4 @@
 *.o
-main
 *.out
 *.exe
 *.txt
