@@ -5,3 +5,4 @@
 *.bin
 client
 build
+*.yy.c
